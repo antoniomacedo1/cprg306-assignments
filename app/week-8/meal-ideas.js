@@ -32,13 +32,13 @@ export default function MealIdeas({ingredient})
     return(
         <div className="p-4 border rounded-lg shadow bg-white w-full">
       <h2 className="text-xl font-bold mb-2">
-        Meal Ideas {ingredient ? `for "${ingredient}"` : ""}
+        Meal Ideas {ingredient ? `for ${ingredient}` : ""}
       </h2>
 
       {!ingredient && <p>Select an item to see meal ideas.</p>}
 
       {ingredient && meals.length === 0 && (
-        <p>No meal ideas found for "{ingredient}".</p>
+        <p>No meal ideas found for {ingredient}.</p>
       )}
 
 
